@@ -34,7 +34,7 @@ fn test_transformation() -> {
 }
 ```
 
-The keyword `pub` tells Rust that this function is public, so we can access to it in the `main.rs`
+The keyword `pub` tells Rust that this function is public, so we can use it in the `main.rs`
 
 
 ## 1. Create a rust project
