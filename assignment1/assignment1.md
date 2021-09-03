@@ -33,9 +33,9 @@ pub fn func_2() {
     umimplemented!()
 }
 
-\\ All implemented functions should be placed outside of the tests module `mod tests{}`
+// All implemented functions should be placed outside of the tests module `mod tests{}`
 
-#[cfg(test)] \\ This attribute tells Rust that the follow module `tests` is used for testing.
+#[cfg(test)] // This attribute tells Rust that the follow module `tests` is used for testing.
 mod tests {
     // All unit tests should be included in this module.
     #[test]
