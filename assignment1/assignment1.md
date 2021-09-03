@@ -11,7 +11,7 @@ Rust Basics
     rustc 1.54.0 (a178d0322 2021-07-26)
     ```
 4. Please make sure your program doesn't contain any warning or error when submitting.
-5. Please provide a unit test for each function you implemented.
+5. Please provide a [unit test](https://doc.rust-lang.org/book/ch11-01-writing-tests.html) for each function you implemented.
 6. Please provide a short description for each function you implemented. 
 7. Please feel free to refer to any *appropriate* online resource. If you are not sure, you can email Dongze (dhe17 *at* umd *dot* edu) or Chase (ckanipe *at* terpmail *dot* umd *dot* edu) for clarification.
 8. This is an individual project, please do not discuss any code related questions with anyone.
@@ -46,9 +46,9 @@ Please crete a new file `mod1.rs` under the `src` folder of your project, so the
 
 ### 2.1 Doubling a number
 Implement the function that doubles an integer in three different ways:
-1. A function that takes an `i32` integer as the input and returns an `i32` integer. A unit test that tests the correctness of your `double_v1()`.
+1. A function that takes an `i32` integer as the input and returns an `i32` integer. A [unit test](https://doc.rust-lang.org/book/ch11-01-writing-tests.html) that tests the correctness of your `double_v1()`.
     ```rust=
-    /// A function that double a `i32` integer. The returned value is an `i32` integer.
+    /// A function that doubles a `i32` integer. The returned value is an `i32` integer.
     pub fn double_v1(n: i32) -> i32 {
         unimplemented!()
     }
