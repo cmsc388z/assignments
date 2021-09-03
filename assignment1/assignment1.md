@@ -141,6 +141,8 @@ You can call the implemented functions in the `main()` function.
 
 
 ```rust=
+pub mod mod1;
+
 fn main() {
     println!("Double of {} is {}", 3, mod1::double_v1(3));
 } 
