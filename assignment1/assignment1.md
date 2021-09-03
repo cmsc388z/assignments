@@ -77,6 +77,7 @@ Implement the function that doubles an integer in three different ways:
     
     #[cfg(test)]
     mod tests {
+        use super::*;
         #[test]
         fn test_double_v1() {
             assert_eq!(double_v1(2), 4);
