@@ -10,7 +10,7 @@ Rust Basics
     $ rustc --version
     rustc 1.54.0 (a178d0322 2021-07-26)
     ```
-4. Please make sure your program doesn't contains any warning or error when submitting.
+4. Please make sure your program doesn't contain any warning or error when submitting.
 5. Please provide a unit test for each function you implemented.
 6. Please provide a short description for each function you implemented. 
 7. Please feel free to refer to any *appropriate* online resource. If you are not sure, you can email Dongze (dhe17 *at* umd *dot* edu) or Chase (ckanipe *at* terpmail *dot* umd *dot* edu) for clarification.
