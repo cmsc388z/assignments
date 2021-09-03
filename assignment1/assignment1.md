@@ -44,7 +44,7 @@ Please create a new rust project using `cargo`. The command you need were covere
 ## 2. Implementing functions
 Please organize your program by following the steps:
 1. create a separate file `mod1.rs` under `src` folder, so the path should be `rust_hw1/src/mod1.rs`.
-2. specify that `mod1.rs` is a module of this program by adding the following code in the first line of your `src/main.rs`:\
+2. specify that `mod1.rs` is a module of this program by adding `pub mod mod1;` (don't forget the semicolon in the end) in the first line of your `src/main.rs`:\
     Filename: main.rs
     ```rust
     pub mod mod1;
