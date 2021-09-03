@@ -21,20 +21,38 @@ Rust Basics
 
 In this assignment, you will create a rust project and implement functions using the concepts we covered during class. For every function that you implement, you **MUST** provide a unit test, and a short description to explain what you did for each function. For example,
 
-```rust=
+```rust
 /// In this function, the input car will undergo transformation. This funtion will return a transformer.
 pub fn transformation(car) -> transformer {
     // Transformation!
     umimplemented!()
 }
 
-#[test]
-fn test_transformation() -> {
-    assert_eq!(transformation(beetle), bumblebee)
+/// Describe `fun_2`
+pub fn func_2() {
+    umimplemented!()
+}
+
+\\ All implemented functions should be placed outside of the tests module `mod tests{}`
+
+#[cfg(test)]
+mod tests {
+    // All unit tests should be included in this module.
+    #[test]
+    fn test_transformation() -> {
+        assert_eq!(transformation(beetle), bumblebee)
+    }
+    
+    #[test]
+    fn test_func_2() {
+        // test something
+    }
+    
+    ...
 }
 ```
 
-The keyword `pub` tells Rust that this function is public, so we can use it in the `main.rs`
+The keyword `pub` tells Rust that this function is public, we can access this function in other modules.
 
 
 ## 1. Create a rust project
@@ -48,6 +66,7 @@ cargo new rust_hw1 --lib
 ## 2. Implementing functions
 Please implement the following functions in `rust_hw1/src/lib.rs`.  
 
+
 ### 2.1 Doubling a number
 Implement the function that doubles an integer in three different ways:
 1. A function that takes an `i32` integer as the input and returns an `i32` integer. A [unit test](https://doc.rust-lang.org/book/ch11-01-writing-tests.html) that tests the correctness of your `double_v1()`.
@@ -57,10 +76,13 @@ Implement the function that doubles an integer in three different ways:
         unimplemented!()
     }
     
-    #[test]
-    fn test_double_v1() {
-        assert_eq!(double_v1(2), 4);
-        assert_eq!(double_v1(-3), -6);    
+    #[cfg(test)]
+    mod tests {
+        #[test]
+        fn test_double_v1() {
+            assert_eq!(double_v1(2), 4);
+            assert_eq!(double_v1(-3), -6);    
+        }
     }
     ```
 2. A function that takes the reference of an `i32` integer as the input and returns an `i64` integer. In this function, I want you to create a new `i32` to take the doubled value, and then shadow it by its `i64` version. A unit test that test the correctness of your `double_v2()`.
