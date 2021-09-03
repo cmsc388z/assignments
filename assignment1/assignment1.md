@@ -130,8 +130,6 @@ You can call the implemented functions in the `main()` function.
 
 
 ```rust=
-pub mod part1;  // let rust know you will use module "mod1". 
-
 fn main() {
     println!("Double of {} is {}", 3, mod1::double_v1(3));
 } 
