@@ -36,9 +36,9 @@ pub fn func_2() {
 // All implemented functions should be placed outside of the tests module `mod tests{}`
 
 #[cfg(test)] // This attribute tells Rust that the follow module `tests` is used for testing.
-mod tests {
-    // All unit tests should be included in this module.
-    #[test]
+mod tests { // All unit tests should be included in this module.
+    use super::*; // This tells Rust that we will use the functions implemented above.
+    #[test] // This attribute specifies that the following function is a unit test.
     fn test_transformation() -> {
         assert_eq!(transformation(beetle), bumblebee)
     }
