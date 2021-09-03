@@ -39,21 +39,14 @@ The keyword `pub` tells Rust that this function is public, so we can use it in t
 
 ## 1. Create a rust project
 
-Please create a new rust project using `cargo`. The command you need were covered in the [lecture notes](https://github.com/cmsc388z/lectures/blob/main/2021-09-03_lecture1.md). Please use snake_case when naming your project. You can use `rust_hw1`, for example. 
+Please create a new rust _library_ project using `cargo`. Please use snake_case when naming your project. You can use `rust_hw1`, for example. 
+
+```rust
+cargo new rust_hw1 --lib
+```
 
 ## 2. Implementing functions
-Please organize your program by following the steps:
-1. create a separate file `mod1.rs` under `src` folder, so the path should be `rust_hw1/src/mod1.rs`.
-2. specify that `mod1.rs` is a module of this program by adding `pub mod mod1;` (don't forget the semicolon in the end) in the first line of your `src/main.rs`:\
-    Filename: main.rs
-    ```rust
-    pub mod mod1;
-    
-    fn main() {
-        println!("Hello, world!");
-    }
-    ```
-3. implement the following functions in `rust_hw1/src/mod1.rs`.  
+Please implement the following functions in `rust_hw1/src/lib.rs`.  
 
 ### 2.1 Doubling a number
 Implement the function that doubles an integer in three different ways:
@@ -136,19 +129,6 @@ pub fn binary_search(arr: &[i32], query: i32) -> Option<i32> {
 ```
 
 ## Check your program
-
-You can call the implemented functions in the `main()` function. 
-
-
-```rust=
-pub mod mod1;
-
-fn main() {
-    println!("Double of {} is {}", 3, mod1::double_v1(3));
-} 
-```
-
-For sumbission, you don't need to do anything for the initiated `main.rs`.
 
 You **MUST** run  `cargo test`, `cargo build`, `cargo fmt`, and `cargo clippy` before submission.
 
