@@ -42,7 +42,18 @@ The keyword `pub` tells Rust that this function is public, so we can use it in t
 Please create a new rust project using `cargo`. The command you need were covered in the [lecture notes](https://github.com/cmsc388z/lectures/blob/main/2021-09-03_lecture1.md). Please use snake_case when naming your project. You can use `rust_hw1`, for example. 
 
 ## 2. Implementing functions
-Please implement the following functions in `rust_hw1/src/main.rs`.  
+Please organize your program by following the steps:
+1. create a separate file `mod1.rs` under `src` folder, so the path should be `rust_hw1/src/mod1.rs`.
+2. specify that `mod1.rs` is a module of this program by adding the following code in the first line of your `src/main.rs`:\
+    Filename: main.rs
+    ```rust
+    pub mod mod1;
+    
+    fn main() {
+        println!("Hello, world!");
+    }
+    ```
+3. implement the following functions in `rust_hw1/src/mod1.rs`.  
 
 ### 2.1 Doubling a number
 Implement the function that doubles an integer in three different ways:
