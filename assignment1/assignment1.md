@@ -22,7 +22,7 @@ Rust Basics
 In this assignment, you will create a rust project and implement functions using the concepts we covered during class. For every function that you implement, you **MUST** provide a unit test, and a short description to explain what you did for each function. For example,
 
 ```rust=
-/// In this function, the input beetle will undergo transformation. This funtion will return a bumblebee.
+/// In this function, the input car will undergo transformation. This funtion will return a transformer.
 pub fn transformation(car) -> transformer {
     // Transformation!
     umimplemented!()
