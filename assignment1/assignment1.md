@@ -39,7 +39,7 @@ The keyword `pub` tells Rust that this function is public, so we can use it in t
 
 ## 1. Create a rust project
 
-Please create a new rust project using `cargo`. The command you need were covered in the [lecture notes](https://hackmd.io/1YbT4if2S528cRbHIMqDKg?view). Please use snake_case when naming your project. You can use `rust_hw1`, for example. 
+Please create a new rust project using `cargo`. The command you need were covered in the [lecture notes](https://github.com/cmsc388z/lectures/blob/main/2021-09-03_lecture1.md). Please use snake_case when naming your project. You can use `rust_hw1`, for example. 
 
 ## 2. Implementing functions
 Please crete a new file `mod1.rs` under the `src` folder of your project, so the correct path of this file should be `rust_hw1/src/mod1.rs`. Then, please implement the following functions in `rust_hw1/src/mod1.rs`.  
