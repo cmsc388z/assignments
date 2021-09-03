@@ -13,7 +13,7 @@ Rust Basics
 4. Please make sure your program doesn't contains any warning or error when submitting.
 5. Please provide a unit test for each function you implemented.
 6. Please provide a short description for each function you implemented. 
-7. Please feel free to refer to any *appropriate* online resource. If you are not sure, you can email Dongze (dhe17 *at* umd *dot* edu) or Chase (ckanipe *at* umd *dot* edu) for clarification.
+7. Please feel free to refer to any *appropriate* online resource. If you are not sure, you can email Dongze (dhe17 *at* umd *dot* edu) or Chase (ckanipe *at* terpmail *dot* umd *dot* edu) for clarification.
 8. This is an individual project, please do not discuss any code related questions with anyone.
 9. [This feedback survey](https://forms.gle/kon3fKNB8qyXf2AB9) will be open throughout the semester, if you have any comments or suggestions for the course, please feel free to report them to us *anonymously*. 
 10. We highly recommend using VS code + [rust_analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer) extention. But it is OK if you have your preferred code editor.
