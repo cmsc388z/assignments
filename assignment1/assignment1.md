@@ -35,7 +35,7 @@ pub fn func_2() {
 
 \\ All implemented functions should be placed outside of the tests module `mod tests{}`
 
-#[cfg(test)]
+#[cfg(test)] \\ This attribute tells Rust that the follow module `tests` is used for testing.
 mod tests {
     // All unit tests should be included in this module.
     #[test]
@@ -52,12 +52,12 @@ mod tests {
 }
 ```
 
-The keyword `pub` tells Rust that this function is public, we can access this function in other modules.
+The keyword `pub` tells Rust that the functions are public, we can call them from other modules.
 
 
 ## 1. Create a rust project
 
-Please create a new rust _library_ project using `cargo`. Please use snake_case when naming your project. You can use `rust_hw1`, for example. 
+Please create a new rust _library_ project using `cargo` named `rust_hw1`. 
 
 ```rust
 cargo new rust_hw1 --lib
@@ -65,7 +65,6 @@ cargo new rust_hw1 --lib
 
 ## 2. Implementing functions
 Please implement the following functions in `rust_hw1/src/lib.rs`.  
-
 
 ### 2.1 Doubling a number
 Implement the function that doubles an integer in three different ways:
@@ -152,7 +151,7 @@ pub fn binary_search(arr: &[i32], query: i32) -> Option<i32> {
 
 ## Check your program
 
-You **MUST** run  `cargo test`, `cargo build`, `cargo fmt`, and `cargo clippy` before submission.
+You **MUST** run `cargo clippy`, `cargo test`, `cargo fmt`, and `cargo build` before submission.
 
 ## Submission
 
