@@ -146,7 +146,7 @@ In this function, you need to find a specific value in a sorted array and return
 This function will take the reference of a sorted array, returns the position of the query if it is in the array or nothing if it is not in the array. The return type will be `Option<i32>`. Please write a unit test!
 
 ```rust=
-pub fn binary_search(arr: &[i32], query: i32) -> Option<i32> {
+pub fn binary_search(arr: &[i32], query: i32) -> Option<usize> {
     unimplemented!()
 }
 ```
