@@ -114,11 +114,12 @@ pub fn sqrt(n: usize) -> usize {
 ### 2.3 [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number)
 
 
-Given starting fibonacci numbers n1 and n2, compute an array of length `out_size` where `v[i]` is the $i$-th fibonacci number. (Do not forget to write a unit test!)
+Given starting fibonacci numbers n1 and n2, compute an array of length `OUTSIZE` where `v[i]` is the i-th fibonacci number after n2. (Do not forget to write a unit test!)
 
 ```rust=
-pub fn fibonacci(ns: (i32, i32), out_size: usize) -> [i32] {
-    unimplemented!()
+const OUTSIZE: usize = 5;
+pub fn fibonacci(ns: (i32, i32)) -> [i32; OUTSIZE] {
+    unimplemented!()
 }
 ```
 
