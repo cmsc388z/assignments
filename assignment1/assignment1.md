@@ -85,7 +85,7 @@ Implement the function that doubles an integer in three different ways:
         }
     }
     ```
-2. A function that takes the reference of an `i32` integer as the input and returns an `i64` integer. In this function, I want you to create a new `i32` to take the doubled value, and then shadow it by its `i64` version. A unit test that test the correctness of your `double_v2()`.
+2. A function that takes the reference of an `i32` integer as the input and returns an `i64` integer. In this function, I want you to create a new `i32` to take the doubled value, and then return its `i64` version. A unit test that test the correctness of your `double_v2()`.
     ```rust=
     ///
     pub fn double_v2(n: &i32) -> i64 {
