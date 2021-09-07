@@ -127,7 +127,7 @@ pub fn fibonacci(ns: (i32, i32)) -> [i32; OUTSIZE] {
 
 #### Slice an array
 
-In this function, I want you to first check the query tuple `(start, end)` is valid (i.e., taking `arr[range.0..range.1]` will never make the program crash. For example, not out-of-boundary), then return the array slice if the query is valid, or an [error type](https://learning-rust.github.io/docs/e3.option_and_result.html#ok-err-for-Result-types). In this function, you should use Right-exclusive range literal `..`, but you [should also know](https://doc.rust-lang.org/book/appendix-02-operators.html) what does `..=` mean.
+In this function, I want you to first check the query tuple `(start, end)` is valid (i.e., taking `&arr[range.0..range.1]` will never make the program crash. For example, not out-of-boundary), then return the array slice if the query is valid, or an [error type](https://learning-rust.github.io/docs/e3.option_and_result.html#ok-err-for-Result-types). In this function, you should use Right-exclusive range literal `..`, but you [should also know](https://doc.rust-lang.org/book/appendix-02-operators.html) what does `..=` mean.
 
 ```rust=
 pub fn slice(arr: &[i32], range: (usize, usize)) -> Result<&[i32], &'static str> {
