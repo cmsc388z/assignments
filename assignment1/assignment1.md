@@ -143,7 +143,7 @@ pub fn slice(arr: &[i32], range: (usize, usize)) -> Result<&[i32], &'static str>
 
 In this function, you need to find a specific value in a sorted array and return the position of this value or nothing.
 
-This function will take the reference of a sorted array, returns the position of the query if it is in the array or nothing if it is not in the array. The return type will be `Option<i32>`. Please write a unit test!
+This function will take the reference of a sorted array, returns the position of the query if it is in the array or nothing if it is not in the array. The return type will be `Option<usize>`. Please write a unit test!
 
 ```rust=
 pub fn binary_search(arr: &[i32], query: i32) -> Option<usize> {
