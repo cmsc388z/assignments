@@ -102,12 +102,12 @@ impl Snake {
 
     /// Get the head position
     pub fn head_position(&self) -> (i32, i32) {
-        (0, 0)
+        unimplemented!();
     }
 
     /// Get the head direction
     pub fn head_direction(&self) -> Direction {
-        Direction::Right
+        unimplemented!();
     }
 
     /// Increase the snake length
