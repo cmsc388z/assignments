@@ -3,7 +3,7 @@ CMSC388Z Homework #2
 
 ## Read Before You Start
 1. This assignment is due on **September 24th, 2021 at noon**.
-2. Please submit your `src/lib.rs` onto [**gradescope**](https://www.gradescope.com/courses/291105) electronically following the [instructions](https://help.gradescope.com/article/ccbpppziu9-student-submit-work).
+2. Please submit your `src/game.rs` and `src/snake.rs` onto [**gradescope**](https://www.gradescope.com/courses/291105) electronically following the [instructions](https://help.gradescope.com/article/ccbpppziu9-student-submit-work).
 3. Please make sure you are using the latest version of Rust.
     ```bash
     $ rustc --version
