@@ -1,5 +1,4 @@
-CMSC388Z Homework #1
-Rust Basics
+CMSC388Z Homework #2
 ===
 
 ## Read Before You Start
