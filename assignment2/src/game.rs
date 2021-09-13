@@ -136,7 +136,7 @@ impl Game {
     }
 
     /// Remove expired foods
-    fn update_food_expired(&mut self) {
+    pub fn update_food_expired(&mut self) {
         unimplemented!();
     }
 
