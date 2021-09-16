@@ -38,7 +38,8 @@ When the snake head overlaps with food it should remove this food from the map, 
 ### `check_snake_alive`
 
 This function should check if the snake is alive. It should do this by
- - Getting the snake head position, and calculating the next head position using the current head direction (the `dir` parameter). If this overlaps with the body, the snake is dead.
+ - Getting the snake head position, using the `dir` parameter to get the next head position. If `None` is passed in, then use the `moving_direction` function. 
+ - If this overlaps with the body, the snake is dead.
  - Checking if the next head position is within the bounds of the map. If not, the snake is dead.
 
 The function should return a `bool` that indicates whether the snake is alive.
