@@ -126,6 +126,10 @@ impl Game {
     }
 
     fn update_snake(&mut self, dir: Option<Direction>) {
+        if let Some(d) = dir {
+            self.snake.moving_direction = d;
+        }
+        
         if self.check_snake_alive() {
             self.snake.move_forward(dir);
             self.check_eating();
