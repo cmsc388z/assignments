@@ -34,9 +34,9 @@ pub struct Block {
 }
 
 pub struct Snake {
-    moving_direction: Direction,
-    body: LinkedList<Block>,
-    last_removed_block: Option<Block>,
+    pub moving_direction: Direction,
+    pub body: LinkedList<Block>,
+    pub last_removed_block: Option<Block>,
 }
 
 impl Snake {
