@@ -3,7 +3,7 @@ CMSC388Z Homework #3
 
 ## Read Before You Start
 1. This assignment is due on **October 8th, 2021 at noon**.
-2. Please submit your `src/main.rs`, `src/lib.rs` and `src/integrated_tests.rs` onto [**GradeScope**](https://www.gradescope.com/courses/291105) electronically following the [instructions](https://help.gradescope.com/article/ccbpppziu9-student-submit-work).
+2. Please submit your `src/main.rs` and `src/lib.rs` onto [**GradeScope**](https://www.gradescope.com/courses/291105) electronically following the [instructions](https://help.gradescope.com/article/ccbpppziu9-student-submit-work).
 3. Please make sure you are using the latest version of Rust.
     ```bash
     $ rustup update
@@ -71,7 +71,7 @@ In this assignment, we will build a [binary + library program](https://www.reddi
 ```bash
 cargo new rust_find --lib && cd rust_find
 touch src/main.rs
-touch src/integrated_tests.rs"
+mkdir -p "tests" && touch "tests/integrated_tests.rs"
 ```
 
 Then, you need to specify that your program contains a binary and a library in `Cargo.toml`. Meanwhile, you can add all the dependencies we will use in this assignment into `Cargo.toml` as well.
@@ -99,10 +99,10 @@ features = ["wrap_help"]
 
 ```
 
-In this assignment, you will work on 3 files, `src/main.rs`, `src/lib.rs`, and `src/integrated_tests.rs`.
+In this assignment, you will work on 3 files, `src/main.rs`, `src/lib.rs`, and `tests/integrated_tests.rs`.
 1. In `src/main.rs`, we parse command-line arguments and evaluate a `run()` function, which is defined in the `src/lib.rs`. 
 2. In `src/lib.rs`, we define all the structs and functions.
-3. In `src/integrated_tests.rs`, we write testing functions. (You need to say `use crate::*;` to import the functions defined in src/lib.rs)
+3. In `tests/integrated_tests.rs`, we write testing functions.
 
 ### Taking command-line arguments
 
@@ -349,6 +349,6 @@ $ cargo check
 $ cargo fmt
 ```
 
-Please submit you `src/main.rs`, `src/lib.rs` and `src/integrated_tests.rs` onto [GradeScope](https://www.gradescope.com/courses/291105). If you cannot access the GradeScope course page, please let us know.
+Please submit you `src/main.rs` and `src/lib.rs` onto [GradeScope](https://www.gradescope.com/courses/291105). If you cannot access the GradeScope course page, please let us know.
 
 
