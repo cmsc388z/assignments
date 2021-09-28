@@ -330,7 +330,7 @@ With the matched files in hand, we can now export the filenames via stdout or to
 
 ```rust
 use std::io::Write;
-pub fn display(files: &[MyFile], output: &mut Option<File>){
+pub fn display(files: &[MyFile], output: &mut Option<File>)-> Option<Vec<String>> {
     implemented!()
 }
 ```
