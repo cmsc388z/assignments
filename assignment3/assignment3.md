@@ -136,8 +136,8 @@ fn main() {
                 .takes_value(true) // argument if true or flag if false.
                 .required(false), // this is an optional argument
         )
-        // TODO: specify --dir here
-        // TODO: specify --patterns here
+        // TODO: define --dirs here
+        // TODO: define --size here
         .get_matches();
         // .get_matches_from(vec!["rust-find", "--patterns=.*/.rs", "--output=./tests.out"]);
 
