@@ -11,11 +11,10 @@ CMSC388Z Homework #3
     rustc 1.55.0 (c8dfcfe04 2021-09-06)
     ```
 4. Please make sure your program doesn't contain any warning or error when submitting.
-5. Public tests are provided. Make sure your program is passing these before you submit them.
-6. Please feel free to refer to any *appropriate* online resource. If you are not sure, you can email Dongze (dhe17 *at* umd *dot* edu) or Chase (ckanipe *at* terpmail *dot* umd *dot* edu) for clarification.
-7. This is an individual project, please do not discuss any code-related questions with anyone.
-8. [This feedback survey](https://forms.gle/kon3fKNB8qyXf2AB9) will be open throughout the semester, if you have any comments or suggestions for the course, please feel free to report them to us *anonymously*. 
-9. We highly recommend using VS code + [rust_analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer) extension. But it is OK if you have your preferred code editor.
+5. Please feel free to refer to any *appropriate* online resource. If you are not sure, you can email Dongze (dhe17 *at* umd *dot* edu) or Chase (ckanipe *at* terpmail *dot* umd *dot* edu) for clarification.
+6. This is an individual project, please do not discuss any code-related questions with anyone.
+7. [This feedback survey](https://forms.gle/kon3fKNB8qyXf2AB9) will be open throughout the semester, if you have any comments or suggestions for the course, please feel free to report them to us *anonymously*. 
+8. We highly recommend using VS code + [rust_analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer) extension. But it is OK if you have your preferred code editor.
 
 ## Please use Piazza to ask questions!
 ## Introduction
