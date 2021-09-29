@@ -31,7 +31,7 @@ Through this assignment, you will practice
 Note that the error handling strategy we used in this assignment is very basic. The purpose is to only help you understanding the concept. For more advanced error handling strategies, please refer to [this chapter](https://doc.rust-lang.org/rust-by-example/error.html) in Rust By Example.
 ## Overview
 
-Your program will find the files in a given set of directories or their sub-directories whose name matches at least one of the given [regex patterns](https://en.wikipedia.org/wiki/Regular_expression) and (optionally) whose size is over a given size threshold. By default, the path of the matched file names will be printed via stdout. Optionally, if users specify an output file path, the path of the matched files will be written to that file. For example,
+Your program will find the files in a given set of directories or their sub-directories when their name matches at least one of the given [regex patterns](https://en.wikipedia.org/wiki/Regular_expression) and (optionally) when their size is over a given size threshold. By default, the path of the matched file names will be printed via stdout. Optionally, if users specify an output file path, the path of the matched files will be written to that file. For example,
 
 ```bash
 $ rust_find --patterns ".*\.rs" --dirs "./src" "./tests"
