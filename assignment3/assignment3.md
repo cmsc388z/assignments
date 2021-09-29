@@ -31,7 +31,7 @@ Through this assignment, you will practice
 Note that the error handling strategy we used in this assignment is very basic. The purpose is to only help you understanding the concept. For more advanced error handling strategies, please refer to [this chapter](https://doc.rust-lang.org/rust-by-example/error.html) in Rust By Example.
 ## Overview
 
-Your program will find the files in a given set of directories or their sub-directories when their name matches at least one of the given [regex patterns](https://en.wikipedia.org/wiki/Regular_expression) and (optionally) when their size is over a given size threshold. By default, the path of the matched file names will be printed via stdout. Optionally, if users specify an output file path, the path of the matched files will be written to that file. For example,
+Your program will find the files in a given set of directories or their sub-directories when their name matches at least one of the given [regex patterns](https://en.wikipedia.org/wiki/Regular_expression) and (optionally) when their size is over a given size threshold. By default, the path of the matched file names will be printed via stdout. Optionally, if the user specifies an output file path, the path of the matched files will be written to that file. For example,
 
 ```bash
 $ rust_find --patterns ".*\.rs" --dirs "./src" "./tests"
@@ -40,7 +40,7 @@ $ rust_find --patterns ".*\.rs" --dirs "./src" "./tests"
 ./tests/integrated_tests.rs
 ```
 
-This command will return all files which end with `.rs` in the directory `./src` and `./tests`, and all their sub-directories. We will use Rust's regular expression engine, so the syntax for regular expressions may be different from what you're used to in other languages or shells.
+This command will return all files that end with `.rs` in the directory `./src` and `./tests`, and all their sub-directories. We will use Rust's regular expression engine, so the syntax for regular expressions may be different from what you're used to in other languages or shells.
 
 If you would like to run your program when implementing, you can do
 
@@ -149,7 +149,7 @@ fn main() {
 }
 ```
 
-When writing unit testing for your command-line interface, you need to copy and paste the whole statement of defining `matches` in your test function, and use `.get_matches_from()` function to take the arguments from the vector you provided. 
+When writing unit testing for your command-line interface, you need to copy and paste the whole statement of defining `matches` in your test function, and use `.get_matches_from()` function instead of `get_matches()` to take the arguments from the vector you provided. 
 
 ### The `run()` function
 
@@ -218,7 +218,7 @@ impl Config { // you need to use explit lifetime here as well
 }
 ```
 
-When accessing data in `ArgMatches`, you can use `values_of()` for arguments with multiple values and `value_of()` for arguments with single value. Notice that `values_of()` returns a `Result` while `value_of()` returns a `Option`.
+When accessing data in `ArgMatches`, you can use `values_of()` for arguments with multiple values and `value_of()` for arguments with single value. Notice that `values_of()` returns a `Result` while `value_of()` returns an `Option`.
 
 To use this struct in `src/main.rs`, you need to specify `use lib::Config` in the top lines of `src/main.rs`. For more useful methods of `ArgMatches`, please refer to its [document](https://docs.rs/clap/2.33.3/clap/struct.ArgMatches.html).
 
@@ -336,7 +336,7 @@ pub fn display(files: &[MyFile], output: &mut Option<File>)-> Option<Vec<String
 
 ## Notes
 
-I want to emphasize that the error handling strategy used in this assignment is only for helping you to understand the idea. For more advanced error handling strategies, please refer to [this chapter](https://doc.rust-lang.org/rust-by-example/error.html) in Rust By Example.
+I want to emphasize that the error handling strategy used in this assignment is only for helping you understand the idea. For more advanced error handling strategies, please refer to [this chapter](https://doc.rust-lang.org/rust-by-example/error.html) in Rust By Example.
 
 For command-line interface, you can find a series of examples and tutorials in `clap-rs`'s [GitHub repo](https://github.com/clap-rs/clap). There is another popular crate `StructOpt` built upon `clap-rs` for command-line argument parsing. They will be integrated in the near future.
 
