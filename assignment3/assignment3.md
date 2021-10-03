@@ -220,7 +220,7 @@ impl Config { // you need to use explit lifetime here as well
 }
 ```
 
-When accessing data in `ArgMatches`, you can use `values_of()` for arguments with multiple values and `value_of()` for arguments with single value. Notice that `values_of()` returns a `Result` while `value_of()` returns an `Option`.
+When accessing data in `ArgMatches`, you can use `values_of()` for arguments with multiple values and `value_of()` for arguments with single value. Notice that `values_of()`  and `value_of()` return an `Option`.
 
 To use this struct in `src/main.rs`, you need to specify `use lib::Config` in the top lines of `src/main.rs`. For more useful methods of `ArgMatches`, please refer to its [document](https://docs.rs/clap/2.33.3/clap/struct.ArgMatches.html).
 
