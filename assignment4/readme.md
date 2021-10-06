@@ -1,5 +1,4 @@
 # CMSC388Z Assignment 4
-===
 
 ## Read Before You Start
 1. This assignment is due on **October 22nd, 2021 at noon**.
@@ -25,7 +24,7 @@ For this assignment you will implement a variation of a linked list data structu
 
 In the boilerplate `lib.rs` file, you should find a linked list data structure.
 
-```
+```rust
 pub struct LinkedList<T> {
     head: Option<Node<T>>,
     len: i32
@@ -33,7 +32,7 @@ pub struct LinkedList<T> {
 ```
 
 And a node data structure.
-```
+```rust
 pub struct Node<T> {
     pub next: Option<Box<Node<T>>>,
     pub data: T
@@ -44,7 +43,7 @@ You are required to implement the following methods on the linked list data stru
 
 ### new
 
-```
+```rust
 pub fn new() -> LinkedList<T>
 ```
 
@@ -52,7 +51,7 @@ This *function* will return an empty linked list.
 
 ### len
 
-```
+```rust
 pub fn len(&mut self) -> i32
 ```
 
@@ -60,7 +59,7 @@ This method will return the length of the linked list.
 
 ### push
 
-```
+```rust
 pub fn push(&mut self, item: T)
 ```
 
@@ -68,7 +67,7 @@ This method will push to the end of the linked list.
 
 ### push_unique
 
-```
+```rust
 pub fn push_unique(&mut self, item: T) -> Result<(), String>
 ```
 
@@ -76,7 +75,7 @@ This method will only push the data to the end of the linked list if it does not
 
 ### pop
 
-```
+```rust
 pub fn pop(&mut self) -> Option<T>
 ```
 
