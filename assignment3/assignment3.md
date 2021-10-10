@@ -52,7 +52,7 @@ $ cargo run -- --patterns ".*\.rs" --dirs "./src"
 ./src/main.rs
 ```
 
-Notice that the `--` between `cargo run` and the program's arguments is to help `cargo` to recognize the arguments passing to it and the program's arguments. You may specify only one value for each argument when doing `cargo run`, here I use `./src` and `*./.rs`.
+Notice that the `--` between `cargo run` and the program's arguments is to help `cargo` to recognize the arguments passing to it and the program's arguments. You may specify only one value for each argument when doing `cargo run`, here I use `./src` and `*.\.rs`.
 
 ## Implementation details
 
@@ -151,7 +151,7 @@ fn main() {
 }
 ```
 
-When writing unit testing for your command-line interface, you need to copy and paste the whole statement of defining `matches` in your test function, and use `.get_matches_from()` function instead of `get_matches()` to take the arguments from the vector you provided. 
+When writing unit testing for your command-line interface, you need to copy and paste the whole statement of defining `matches` in your test function, and use `.get_matches_from()` function instead of `get_matches()` to take the arguments from the vector you provided. As backslashes are special characters in Rust, when you use get_matches_from(), you need to use a backslash to escape another backslash, like `--patterns=.*\\.rs`.
 
 ### The `run()` function
 
