@@ -140,7 +140,7 @@ fn main() {
         // TODO: define --dirs here
         // TODO: define --size here
         .get_matches();
-        // .get_matches_from(vec!["rust-find", "--patterns=.*/.rs", "--output=./tests.out"]);
+        // .get_matches_from(vec!["rust-find", "--patterns=.*\\.rs", "--output=./tests.out"]);
 
 
     let args = Config::from_args(&matches); // will be defined later
