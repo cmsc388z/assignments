@@ -7,7 +7,7 @@
     ```bash
     $ rustup update
     $ rustc --version
-    rustc 1.55.0 (c8dfcfe04 2021-09-06)
+    rustc 1.56.0 (09c42c458 2021-10-18)    
     ```
 4. Please make sure your program doesn't contain any warning or error when submitting.
 5. Please feel free to refer to any *appropriate* online resource. If you are not sure, you can email Dongze (dhe17 *at* umd *dot* edu) or Chase (ckanipe *at* terpmail *dot* umd *dot* edu) for clarification.
